@@ -14,3 +14,9 @@ unimplemented_functions! {
     fn private_function() {}
 }
 ```
+
+## unimplemented_function
+```rust
+#[unimplemented_function("Comment about the implementation status of this function")]
+pub fn function(c: &str) -> i32 { 0i32 }
+```
