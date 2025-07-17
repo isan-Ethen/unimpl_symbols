@@ -1,7 +1,8 @@
-# unimplemented_functions
-Macros to indicate unimplemented functions
+# unimpl_symbols
+Macros to indicate unimplemented symbols
 
 # Usage
+## unimplemented_functions!
 ```rust
 unimplemented_functions! {
     pub fn function1(a: usize) {}
