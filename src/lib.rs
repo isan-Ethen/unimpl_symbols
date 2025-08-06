@@ -47,6 +47,7 @@ pub fn unimplemented_function(attr: TokenStream, item: TokenStream) -> TokenStre
     let vis = &func.vis;
     let sig = &func.sig;
     let result = quote! {
+        #[doc = #comment]
         #[unsafe(no_mangle)]
         #vis unsafe #sig {
             unimplemented!()
